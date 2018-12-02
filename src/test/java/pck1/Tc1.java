@@ -83,14 +83,14 @@ public class Tc1
 	public void tearDown() throws InterruptedException
 	{
 		System.out.println("after class method is calling");
-		/*mywait=new WebDriverWait(driver, 100);
+		mywait=new WebDriverWait(driver, 100);
 		mywait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='welcome']")));
 		driver.findElement(By.xpath("//*[@id='welcome']")).click();
 		mywait.until(ExpectedConditions.elementToBeClickable(By.xpath("/*[@id='welcome-menu']/ul/li[2]/a")));
 		driver.findElement(By.xpath("//*[@id='welcome-menu']/ul/li[2]/a")).click();
 		Thread.sleep((long) 30.0);
 		String page_Title=driver.getTitle();
-		Assert.assertEquals(page_Title, "OrangeHRM");*/
+		Assert.assertEquals(page_Title, "OrangeHRM");
 		extent.flush();
 		driver.close();
 		//driver.quit();
