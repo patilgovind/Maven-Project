@@ -8,7 +8,7 @@ public class Loginpage
 {
 	WebDriver driver;
 	
-	//WebDriverWait mywait;
+	
 	
 	By userName_txt=By.id("txtUsername");
 	
@@ -20,7 +20,7 @@ public class Loginpage
 	public Loginpage(WebDriver driver)
 	{
 		this.driver=driver;
-		//mywait=new WebDriverWait(driver, 30);
+		
 	}
 	
 	public void login(String username,String password)

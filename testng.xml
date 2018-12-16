@@ -2,8 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+ 
+  <parameter name="browserName" value="firefox"></parameter>
+  
   <classes>
-  <class name="Tc1.java"></class>
+  <class name="pck1.LoginTest"></class>
   
   </classes>
   </test> <!-- Test -->
